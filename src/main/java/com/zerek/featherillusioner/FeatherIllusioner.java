@@ -1,9 +1,6 @@
 package com.zerek.featherillusioner;
 
-import com.zerek.featherillusioner.listeners.BlockPlaceListener;
-import com.zerek.featherillusioner.listeners.CreatureSpawnListener;
-import com.zerek.featherillusioner.listeners.EntityDamageListener;
-import com.zerek.featherillusioner.listeners.EntityDeathListener;
+import com.zerek.featherillusioner.listeners.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class FeatherIllusioner extends JavaPlugin {
@@ -15,6 +12,8 @@ public final class FeatherIllusioner extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CreatureSpawnListener(this),this);
         getServer().getPluginManager().registerEvents(new EntityDamageListener(),this);
         getServer().getPluginManager().registerEvents(new EntityDeathListener(this),this);
+        getServer().getPluginManager().registerEvents(new EntityTargetLivingEntityListener(),this);
+        getServer().getPluginManager().registerEvents(new EntitySpellCastListener(),this);
 
     }
 
