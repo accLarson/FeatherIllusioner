@@ -44,8 +44,8 @@ public class SummoningInitiateTask extends BukkitRunnable {
         bow.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE,128);
         illusioner.getEquipment().setItemInMainHand(bow);
         illusioner.getEquipment().setItemInMainHandDropChance(0);
-        illusioner.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(400.0);
-        illusioner.setHealth(400.0);
+        illusioner.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(640.0);
+        illusioner.setHealth(640.0);
         illusioner.setRemoveWhenFarAway(true);
         illusioner.setSilent(true);
         illusioner.setAI(false);
