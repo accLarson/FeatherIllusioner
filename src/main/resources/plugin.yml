@@ -1,0 +1,6 @@
+name: FeatherIllusioner
+version: '${project.version}'
+main: com.zerek.featherillusioner.FeatherIllusioner
+api-version: 1.17
+authors: [ Zerek ]
+description: Summon Illusioner
